@@ -205,7 +205,7 @@ proto._setRectSize = function( elem, rect ) {
     h = this._applyGridGutter( h, this.rowHeight );
   }
   // rect must fit in packer
-  rect.width = Math.min( w, this.packer.width );
+  rect.width = Math.min( w, this.packer.width ) - 1;
   rect.height = Math.min( h, this.packer.height );
 };
 
